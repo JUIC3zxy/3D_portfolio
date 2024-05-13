@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { Navbar, Hero, About, Experience, Feedbacks } from "./components";
+import {
+  Navbar,
+  Hero,
+  About,
+  Experience,
+  Feedbacks,
+  Contact,
+} from "./components";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,8 +21,8 @@ function App() {
             <Hero></Hero>
           </div>
           <About></About>
-          <Contact></Contact>
           <Experience />
+          <Contact></Contact>
           <Feedbacks></Feedbacks>
         </div>
       </BrowserRouter>
